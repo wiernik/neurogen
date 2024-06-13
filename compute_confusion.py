@@ -23,8 +23,8 @@ def main(argv):
 
     group_ids = list(project.children['group_id'].unique())
     group_ids.append('all')
-    result_path = Path(sys.path[0]) / 'results'
-    result_path.mkdir(exist_ok=True)
+    result_path = Path(sys.path[0]) / 'results' / 'conf'
+    result_path.mkdir(exist_ok=True, parents=True)
 
     for group_id in group_ids:
         print(f"Computing confusion matrix for group: {group_id}")
