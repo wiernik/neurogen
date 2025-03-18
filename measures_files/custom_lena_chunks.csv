@@ -1,0 +1,9 @@
+callable,set,name,speaker,max_interval
+voc_dur_speaker,its,voc_dur_chi,CHI,0
+voc_speaker,its,voc_chi,CHI,0
+avg_voc_dur_speaker,its,avg_voc_dur_chi,CHI,0
+wc_speaker,its,wc_fem,FEM,0
+wc_speaker,its,wc_mal,MAL,0
+wc_adu,its,wc_adu,na,0
+lena_CTC,its,5s_CTC,na,0
+lena_CVC,its,CVC,na,0

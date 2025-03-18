@@ -1,0 +1,15 @@
+callable,set,name,speaker,max_interval
+voc_dur_speaker,eaf/an1,voc_dur_chi,CHI,0
+voc_dur_speaker,eaf/an1,voc_dur_mal,MAL,0
+voc_dur_speaker,eaf/an1,voc_dur_fem,FEM,0
+voc_dur_speaker,eaf/an1,voc_dur_och,OCH,0
+voc_speaker,eaf/an1,voc_chi,CHI,0
+avg_voc_dur_speaker,eaf/an1,avg_voc_dur_chi,CHI,0
+wc_speaker,eaf/an1,wc_fem,FEM,0
+wc_speaker,eaf/an1,wc_mal,MAL,0
+wc_adu,eaf/an1,wc_adu,na,0
+simple_CTC,eaf/an1,5s_CTC,na,5000
+non_can_voc_speaker,eaf/an1,non_can_voc_CHI,CHI,0
+can_voc_speaker,eaf/an1,can_voc_CHI,CHI,0
+can_voc_dur_speaker,eaf/an1,can_voc_dur_CHI,CHI,0
+cp_dur,eaf/an1,cp_dur,CHI,0

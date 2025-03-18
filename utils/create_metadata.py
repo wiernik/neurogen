@@ -34,6 +34,19 @@ def create_annotations_metadata(data_path, duration):
                          'imported_at':'2024-07-10',
                          'error': '',
                          'package_version': 'custom'})
+        # Create entry for alice files
+        metadata.append({'set': 'alice',
+                         'recording_filename': recording_filename,
+                         'time_seek': 0,
+                         'range_onset': 0,
+                         'range_offset': int(duration[recording_filename] * 1000),
+                         'raw_filename': its_path.stem + '.txt',
+                         'format': 'alice',
+                         'filter': '',
+                         'annotation_filename': its_path.stem + '.csv',
+                         'imported_at': '2024-07-10',
+                         'error': '',
+                         'package_version': 'custom'})
     metadata = pd.DataFrame(metadata)
     metadata.drop_duplicates(inplace=True)
     metadata.sort_values(by='set', inplace=True)
