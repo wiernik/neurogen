@@ -73,19 +73,19 @@ python metrics/compute_standard_measures.py --data_path L3_HIPAA_LENA_cleaned --
 
 ```sh
 python utils/add_gold_to_annotations.py \
-  --data_path /path/to/L3_HIPAA_LENA_cleaned/annotations/eaf/an1/raw \
-  --annotations_csv_path /path/to/L3_HIPAA_LENA_cleaned/metadata/annotations.csv
+  --data_path data/L3_HIPAA_LENA_cleaned/annotations/eaf/an1/raw \
+  --annotations_csv_path data/L3_HIPAA_LENA_cleaned/metadata/annotations.csv
 ```
 
-This will create a file `/path/to/L3_HIPAA_LENA_cleaned/metadata/annotations2.csv`. 
+This will create a file `data/L3_HIPAA_LENA_cleaned/metadata/annotations2.csv`. 
 After reviewing it, you can remove `annotations.csv` and replace it by this new file.
 
 ### (2.5) Update annotations.csv with VCM files using the following command (only if not already done):
 
 ```shell
 python utils/add_vcm_to_annotations.py \
-  --data_path  /path/to/L3_HIPAA_LENA_cleaned/annotations/vcm/raw \
-  --annotations_csv_path  /path/to/L3_HIPAA_LENA_cleaned/metadata/annotations.csv
+  --data_path  data/L3_HIPAA_LENA_cleaned/annotations/vcm/raw \
+  --annotations_csv_path  data/L3_HIPAA_LENA_cleaned/metadata/annotations.csv
 ```
 
 Again this will create a file `annotations2.csv` that you can rename `annotations.csv` after reviewing it.
@@ -116,7 +116,6 @@ python metrics/compute_pyannote_metrics.py --data_path data/L3_HIPAA_LENA_cleane
 python metrics/compute_pyannote_metrics.py --data_path data/L3_HIPAA_LENA_cleaned --hyp vtc --ref eaf/an1 --metric fscore
 ```
 
-
 ### 7. Compute confusion matrices 
 
 ```sh
@@ -133,8 +132,6 @@ python metrics/compute_confusion.py --data_path data/L3_HIPAA_LENA_cleaned --set
 python metrics/compute_agreement.py --data_path data/L3_HIPAA_LENA_cleaned --set1 vtc --set2 eaf/an1 --two_mn_clip_level
 # between LENA and human
 python metrics/compute_agreement.py --data_path data/L3_HIPAA_LENA_cleaned --set1 its --set2 eaf/an1 --two_mn_clip_level
-# between VTC and LENA
-#python metrics/compute_agreement.py --data_path data/L3_HIPAA_LENA_cleaned --set1 its --set2 vtc --only_human_annotated
 ```
 
 ### 9. Compute identification error rate and percentage correct

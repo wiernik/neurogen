@@ -8,3 +8,4 @@ wc_adu,alice,wc_adu,na,0
 simple_CTC,vtc,5s_CTC,na,5000
 non_can_voc_speaker,vcm,non_can_voc_CHI,CHI,0
 can_voc_speaker,vcm,can_voc_CHI,CHI,0
+can_voc_dur_speaker,vcm,can_voc_dur_CHI,CHI,0
