@@ -1,6 +1,9 @@
 #!/usr/bin/env python3
 """
 Convert CSV files in a folder to RTTM format.
+
+Example usage:
+python utils/extract_rttm_KCHI.py --data data/L3_HIPAA_LENA_cleaned/annotations/eaf/an1/converted --output data/L3_HIPAA_LENA_cleaned/annotations/eaf/an1/rttm
 """
 
 import argparse
@@ -20,7 +23,7 @@ def read_csv(path):
 
 def csv2rttm(csv_data):
     cols = csv_data.columns
-    assert 'segment_onset' in cols and 'segment_offset' in cols and 'speaker_type' in cols
+    assert 'segment_onset' in cols and 'segment_offset' in cols and 'speaker_type' in colsx
     rttm = pd.DataFrame(index=csv_data.index)
     rttm['first'] = 'SPEAKER'
     rttm['second'] = csv_data['filename']
@@ -32,6 +35,9 @@ def csv2rttm(csv_data):
     rttm['eigth'] = csv_data['speaker_type']
     rttm['ninth'] ='<NA>'
     rttm['tenth'] = '<NA>'
+
+    # Remove voc < 0.06 s since VCM will return an error for them
+    rttm = rttm[rttm['fifth'] > .06]
 
     # Replace ACLEW convention to VTC convention
     speaker_map = {'CHI': 'KCHI',

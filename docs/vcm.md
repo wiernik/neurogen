@@ -36,6 +36,6 @@ pip install -r requirements.txt
 
 ```
 Al Futaisi, N., Zhang, Z., Cristia, A., Warlaumont, A., & Schuller, B. (2019). VCMNet: Weakly supervised learning for automatic infant vocalisation maturity analysis. International Conference on Multimodal Interaction (pp. 205-209).
-Zhang, T., Suresh, A., Warlaumont, A., Hitczenko, K., Cristia, A., Cychosz, M. (2025) Employing self-supervised learning models for cross-linguistic child speech maturity classification. In review in Intersspech.
+Zhang, T., Suresh, A., Warlaumont, A., Hitczenko, K., Cristia, A., Cychosz, M. (2025) Employing self-supervised learning models for cross-linguistic child speech maturity classification. In review in Interspeech.
 ```
 
