@@ -5,6 +5,13 @@ We will compare two algorithms:
 To do so, we will work with our 25 hours of audio annotated by a single human expert (5 hours per diagnostic group).
 Both classifiers will be applied exclusively on KCHI utterances.
 
+To get the data, please follow the instructions in the [L3_LENA_HIPAA gin repository](https://gin.g-node.org/MarvinLvn/L3_HIPAA_LENA).
+We'll be working from:
+
+1. `metadata` which contains useful metadata including the child's diagnostic group and age
+2. `annotations/eaf/an1/converted` which contains the manual annotation containing vocal maturity labels
+3. `annotations/vcm/converted_from_human_timestamps` which contains automatic vocal maturity labels based on ground truth diarization
+
 # A. Applying [VCMNet](https://github.com/LAAC-LSCP/vcm)
 
 1. First, we need to extract KCHI utterances from annotation files:
