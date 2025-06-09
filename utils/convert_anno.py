@@ -147,7 +147,8 @@ def main(argv):
     else:
         raise ValueError(f'Unknown algo {args.algo}. Please choose among [vtc, lena, alice, eaf].')
 
-    output_folder = data_path.parent / 'converted'
+    output_folder = data_path.parent / data_path.stem.replace('raw', 'converted')
+
     output_folder.mkdir(parents=True, exist_ok=True)
     if args.algo in ['vtc', 'vcm', 'lena', 'eaf']:
         for file_path in tqdm(data_path.glob(f'*{ext}')):
