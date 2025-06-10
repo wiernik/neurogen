@@ -5,7 +5,13 @@ We will compare two algorithms:
 To do so, we will work with our 25 hours of audio annotated by a single human expert (5 hours per diagnostic group).
 Both classifiers will be applied exclusively on KCHI utterances.
 
-To get the data, please follow the instructions in the [L3_LENA_HIPAA gin repository](https://gin.g-node.org/MarvinLvn/L3_HIPAA_LENA).
+To get the data, install ChildProject and datalad via:
+
+```shell
+conda env create -f env.yml
+```
+
+And then follow the instructions in the [L3_LENA_HIPAA](https://gin.g-node.org/MarvinLvn/L3_HIPAA_LENA) gin repository.
 We'll be working from:
 
 1. `metadata` which contains useful metadata including the child's diagnostic group and age
