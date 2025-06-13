@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Convert CSV files in a folder to RTTM format.
+Convert CSV files in a folder to RTTM format. Keep only KCHI segments
 
 Example usage:
 python utils/extract_rttm_KCHI.py --data data/L3_HIPAA_LENA_cleaned/annotations/eaf/an1/converted --output data/L3_HIPAA_LENA_cleaned/annotations/eaf/an1/rttm
@@ -23,7 +23,7 @@ def read_csv(path):
 
 def csv2rttm(csv_data):
     cols = csv_data.columns
-    assert 'segment_onset' in cols and 'segment_offset' in cols and 'speaker_type' in colsx
+    assert 'segment_onset' in cols and 'segment_offset' in cols and 'speaker_type' in cols
     rttm = pd.DataFrame(index=csv_data.index)
     rttm['first'] = 'SPEAKER'
     rttm['second'] = csv_data['filename']
