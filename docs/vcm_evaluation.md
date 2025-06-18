@@ -18,7 +18,7 @@ We'll be working from:
 2. `annotations/eaf/an1/converted` which contains the manual annotation with human vocal maturity labels
 3. `annotations/vcm/converted_from_human_timestamps` which contains automatic vocal maturity labels (VCMNet) based on ground truth diarization
 
-To run the vocal maturity classifiers, please follow [these instructions](vcm_inference).
+To run the vocal maturity classifiers, please follow [these instructions](./vcm_inference.md).
 
 # A. 
 
