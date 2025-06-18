@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
 import argparse
-import pandas as pd
 from pathlib import Path
+
+import pandas as pd
+
 
 def extract_onset_from_filename(filename):
     """Extract onset from filename (second-to-last underscore part)"""

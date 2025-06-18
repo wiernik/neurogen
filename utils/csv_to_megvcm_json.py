@@ -3,7 +3,12 @@
 Convert CSV files in a folder to RTTM format. Keep only KCHI segments
 
 Example usage:
+
+# Locally
 python utils/csv_to_megvcm_json.py --input /home/engaclew/neurogen/data/L3_HIPAA_LENA_cleaned/chunks/eaf_an1/chunks_20250613_205715.csv
+
+# On oberon
+python utils/csv_to_megvcm_json.py --input /scratch1/data/raw_data/neurogen/L3_HIPAA_LENA_cleaned/chunks/eaf_an1/chunks_20250613_205715.csv
 """
 
 import argparse
