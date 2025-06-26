@@ -1,0 +1,22 @@
+Overall gender distribution:
+child_sex
+m    114
+f    110
+
+Gender distribution by group_id with totals:
+child_sex            f   m  Total
+group_id                         
+angelman_syndrome   32  21     53
+autism_sibling      14   9     23
+down_syndrome       21  29     50
+fragile_x_syndrome   5  21     26
+low_risk            38  34     72
+
+Age (in months) ranges by group_id:
+                    min  max  mean  median   std
+group_id                                        
+angelman_syndrome    47  131  96.1   104.0  22.5
+autism_sibling       40   71  50.3    48.0   8.0
+down_syndrome        75  124  91.8    90.0  10.2
+fragile_x_syndrome   46  145  84.8    88.0  26.1
+low_risk             41  108  81.2    89.0  21.9
