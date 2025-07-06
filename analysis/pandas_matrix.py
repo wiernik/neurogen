@@ -59,7 +59,7 @@ csv_files = csv_files[['filename', 'segment_onset', 'segment_offset',
 #                               ('VCMNet', vcm_files), 
 #                               ('meg_classifier', meg_files)]:
 #     for file_path in file_list:
-#         df = pd.read_csv(file_path, dtype={'segment_onset': int, 'segment_offset': int}) # make sure segments show up as ints
+#         df = pd.read_csv(file_path)
 
 #         df = df[(df['speaker_type'] == 'CHI') &                         # filter for speaker type
 #                 (df['vcm_type'] != 'U') &                               # filter out unsure labels
