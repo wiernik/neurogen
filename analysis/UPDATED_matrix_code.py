@@ -1,3 +1,5 @@
+##### code from w/c 30 june -- now archivable #####
+
 
 # note: i still want to streamline this by making things less chunky, but it works
 # things i plan to add to clean up the code include:
